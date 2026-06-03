@@ -8,7 +8,7 @@ function Portfolio() {
         <span className='portfolio-title'>Портфолио</span>
         <div className='portfolio'>
             {portfolio.map(item =>
-                <PortfolioItem src={`/portfolio_images/${item.img}`} description={item.description}/>
+                <PortfolioItem src={item.img} description={item.description}/>
             )}
         </div>
     </>

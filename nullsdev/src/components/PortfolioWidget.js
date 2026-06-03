@@ -11,7 +11,7 @@ function PortfolioWidget() {
         <span onClick={() => navigate("/portfolio")} className='portfolio-title'>Портфолио</span>
         <div onClick={() => navigate("/portfolio")} className='portfolio-widget'>
           {portfolio.map(item => 
-            <PortfolioItem src={`/portfolio_images/${item.img}`} description={item.description}/>
+            <PortfolioItem src={item.img} description={item.description}/>
           )}
         </div>
     </>
