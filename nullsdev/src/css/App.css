@@ -156,7 +156,8 @@ main {
 }
 
 .portfolio-card-image {
-  width: 250px;
+  margin-top: 10px;
+  width: 300px;
   height: 180px;
 }
 
