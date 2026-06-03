@@ -10,12 +10,13 @@ body {
   background-color: #323232;
   color: rgb(255, 255, 255);
   font-family: "M PLUS Rounded 1c", system-ui, 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
 header {
   display: flex;
   justify-content: center;
-  margin: 10px 30%;
+  height: 50px;
 }
 
 .header-logo {
@@ -66,7 +67,6 @@ header {
 }
 
 .header-line {
-  margin-top: 50px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -132,14 +132,10 @@ main {
   scrollbar-width: none;
 }
 
-.portfolio-widget::-webkit-scrollbar {
-  display: none;
-}
-
 .portfolio-title {
   cursor: pointer;
   margin-top: 50px;
-  margin-right: 75px;
+  margin-right: 40%;
   margin-bottom: 5px;
 
   font-size: 24px;
@@ -147,7 +143,7 @@ main {
 }
 
 .portfolio-card {
-  min-width: 300px;
+  min-width: 340px;
   height: 225px;
 
   display: flex;
@@ -170,4 +166,57 @@ main {
   align-items: center;
 
   gap: 20px;
+}
+
+@media screen and (min-width: 900px)  {
+
+header {
+  height: 80px;
+}
+
+.header-logo {
+  width: 64px;
+  height: 64px;
+}
+
+.header-menu-button {
+  display: none;
+}
+
+.header-menu {
+  display: none;
+}
+
+.header-menu-list {
+  display: none;
+}
+
+.header-menu-list-item {
+  display: none;
+}
+
+.menu-main-name {
+  font-size: 48px;
+  margin-top: 50px;
+}
+
+.menu-button {
+  width: 20%;
+}
+
+.portfolio-widget {
+  height: 260px;
+
+  scrollbar-width: auto;
+}
+
+.portfolio-title {
+  margin-top: 20px;
+  margin-right: 70%;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 }
