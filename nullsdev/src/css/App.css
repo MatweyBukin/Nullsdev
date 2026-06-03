@@ -168,6 +168,14 @@ main {
   gap: 20px;
 }
 
+.desktop-header-menu-list {
+  display: none;
+}
+
+.desktop-header-menu-list-item {
+  display: none;
+}
+
 @media screen and (min-width: 900px)  {
 
 header {
@@ -218,5 +226,25 @@ header {
 .portfolio {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+.desktop-header-menu-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  white-space: nowrap;
+  list-style-type: none;
+}
+
+.desktop-header-menu-list-item {
+  text-decoration: none;
+  display: initial;
+  font-size: 24px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 }
