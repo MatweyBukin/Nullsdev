@@ -1,4 +1,4 @@
-export const telegramLink = "https://t.me/m1twey"
+export const telegramLink = "https://t.me/NullsD3V"
 
 export const portfolio = [
     {img: "this_website.png", description: "Этот вебсайт)"},
