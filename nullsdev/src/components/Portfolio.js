@@ -1,4 +1,3 @@
-import {useState, useContext} from 'react';
 import {portfolio} from '../config';
 import PortfolioItem from "./PortfolioItem"
 

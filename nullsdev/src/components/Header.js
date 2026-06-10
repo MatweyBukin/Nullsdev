@@ -1,4 +1,4 @@
-import {useState, useContext} from 'react';
+import {useState} from 'react';
 import Logo from "../assets/logo0.png"
 import MenuButton from "../assets/menu-button.png"
 import { useSpring, animated } from "react-spring";
@@ -18,13 +18,13 @@ function Header() {
   return (
     <>
       <header>
-          <img onClick={() => navigate("/")} className='header-logo' src={Logo}/>
+          <img onClick={() => navigate("/")} className='header-logo' src={Logo} alt=''/>
           <ul className='desktop-header-menu-list'>
             <li className='desktop-header-menu-list-item'><a href={telegramLink} target="_blank" rel="noopener noreferrer">Связаться со мной</a></li>
             <li className='desktop-header-menu-list-item'><Link to="/">Главная</Link></li>
             <li className='desktop-header-menu-list-item'><Link to='/portfolio'>Портфолио</Link></li>
           </ul>
-          <img onClick={toggleIsOpen} className='header-menu-button' src={MenuButton}/>
+          <img onClick={toggleIsOpen} className='header-menu-button' src={MenuButton} alt=''/>
       </header>
       <animated.div className='header-menu' style={animation}>
         <ul className='header-menu-list'>

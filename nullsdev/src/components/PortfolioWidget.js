@@ -1,4 +1,3 @@
-import {useState, useContext} from 'react';
 import PortfolioItem from './PortfolioItem';
 import {portfolio} from "../config"
 import {useNavigate} from "react-router-dom"

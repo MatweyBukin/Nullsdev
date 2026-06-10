@@ -1,7 +1,6 @@
 import './css/App.css';
 import Header from './components/Header';
 import Menu from './components/Menu';
-import {createContext, useState} from "react"
 import {HashRouter, Routes, Route} from "react-router-dom"
 import Portfolio from './components/Portfolio';
 
